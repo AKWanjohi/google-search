@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 :root {
   --bg-color: #f5f5f5;
   --fg-color: #fff;
@@ -18,7 +20,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
 }
 
@@ -28,7 +30,7 @@ body {
 }
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
 }
@@ -47,28 +49,19 @@ body {
   cursor: pointer;
 }
 
-.mic-icon {
-  width: 0;
-  transition: 0.2s;
-  transition-delay: 0.3s;
-}
-
 input {
-  font-size: 24px;
   width: 0;
-  background-color: transparent;
+  font-size: 18px;
   border: none;
   outline: none;
-  transition: 1s;
-}
-
-.active .mic-icon {
-  width: 30px;
+  background-color: transparent;
+  color: var(--accent-color);
+  transition: all 0.5s ease-in-out;
 }
 
 .active input {
   width: 600px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .settings {
@@ -84,26 +77,30 @@ input {
   justify-content: space-between;
   align-items: center;
   background-color: var(--fg-color);
-  border: none;
   box-shadow: 0 0 10px 1px var(--box-shadow);
   border-radius: 30px;
-  width: 150px;
+  width: max-content;
   margin: 10px 10px 0 0;
   cursor: pointer;
 }
 
 #toggle p {
+  padding: 5px 15px;
   border-right: 1px solid var(--accent-color);
   border-radius: 30px;
-  padding: 5px 15px;
 }
 
 .current {
   display: inherit;
   align-items: center;
-  margin-right: 10px;
 }
 
 .current i {
-  margin-right: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.current small {
+  margin-right: 15px;
+  font-size: 16px;
 }

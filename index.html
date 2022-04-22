@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Google Search</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="page">
-        <div class="settings">
-            <div id="toggle">
-                <p>Theme</p>
-                <div class="current">
-                    <i id="themeIcon" class="fas fa-sun"></i>
-                    <small id="themeName">Light</small>
-                </div>
-            </div>
+      <div class="settings">
+        <div id="toggle">
+          <p>Theme</p>
+          <div class="current">
+            <i id="themeIcon" class="fas fa-sun"></i>
+            <small id="themeName">Light</small>
+          </div>
         </div>
-        <div class="main">
-            <div id="search">
-                <img src="images/google-icon.png" id="searchIcon">
-                <input type="search" placeholder="Search google or enter a URL">
-                <img src="images/google-mic-icon.png" class="mic-icon">
-            </div>
-        </div>
+      </div>
+      <div class="main">
+        <form action="http://www.google.com/search" autocomplete="off">
+          <div id="search">
+            <img src="images/google-icon.png" id="searchIcon" />
+            <input type="search" name="q" placeholder="Search google..." />
+          </div>
+        </form>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
